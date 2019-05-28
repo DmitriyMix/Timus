@@ -15,13 +15,14 @@ namespace ABProblem
             var a = int.Parse(ss[0]);
             var b = int.Parse(ss[1]);
 
-            var r = new Solver.ABSolver(a, b).Solve();
+            var r = a + b;//new Solver.ABSolver(a, b).Solve();
 
             Console.WriteLine(r);
         }
     }
 }
 
+/*
 namespace Solver
 {
     class ABSolver
@@ -41,4 +42,4 @@ namespace Solver
         }
 
     }
-}
+}*/
