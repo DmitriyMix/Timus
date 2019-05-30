@@ -12,8 +12,9 @@ namespace MathematiciansAndBerries
             int b2 = int.Parse(Console.ReadLine());
             int a3 = int.Parse(Console.ReadLine());
             int b3 = int.Parse(Console.ReadLine());
-            Console.WriteLine(a1 - a3);
-            Console.WriteLine(b1 - b2);
+            Console.WriteLine("1 - " + (a1 - a3));
+            Console.WriteLine("2 - " + (b1 - b2));
+            //Console.ReadLine();
         }
     }
 }
