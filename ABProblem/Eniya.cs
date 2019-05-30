@@ -6,11 +6,6 @@ namespace Eniya
     {
         private static void Main(string[] args)
         {
-            if (args == null)
-            {
-                throw new ArgumentNullException(nameof(args));
-            }
-
             int A;
             int B;
             int N;
