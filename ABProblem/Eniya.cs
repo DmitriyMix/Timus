@@ -4,7 +4,7 @@ namespace Eniya
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             int A;
             int B;
