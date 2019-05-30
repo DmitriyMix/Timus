@@ -6,7 +6,7 @@ namespace TwoBandits
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             string s = Console.ReadLine();
             string[] x = s.Split(' ');
