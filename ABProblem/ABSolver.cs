@@ -2,8 +2,8 @@
 {
     class ABSolver
     {
-        private int a;
-        private int b;
+        private readonly int a;
+        private readonly int b;
 
         public ABSolver(int _a, int _b)
         {
