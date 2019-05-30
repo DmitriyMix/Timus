@@ -8,7 +8,7 @@ namespace Donald
         static void Main()
         {
             int n = int.Parse(Console.ReadLine());
-            int num = 1;
+            int num = 0;
             int sum = 0;
             for (int z = 1; z <= n; z++)
             {
