@@ -15,8 +15,7 @@ namespace OneSoldierInTheField
 
             for (int i = 0; i < n; i++)
             {
-                if (move[i][0] >= 'c' && move[i][0] <= 'f' &&
-                    move[i][1] >= '3' && move[i][1] <= '6')
+                if (move[i][0] >= 'c' && move[i][0] <= 'f' && move[i][1] >= '3' && move[i][1] <= '6')
                 {
                     Console.WriteLine(8);
                 }
