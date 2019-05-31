@@ -3,6 +3,7 @@ using System.Globalization;
 
 class SquareRoot
 {
+    //1001+
     public static void MakeTest(string s)
     {
         var ss = s.Split(new char[] { ' ', '\t', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
