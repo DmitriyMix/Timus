@@ -8,7 +8,7 @@ namespace ToTheQuestionAboutSports
         {
             int n = int.Parse(Console.ReadLine());
             string[][] a = new string[n][];
-            for (int i = 0; i <= n; i++)
+            for (int i = 0; i < n; i++)
             {
                 a[i] = Console.ReadLine().Split(' ');
             }
@@ -16,7 +16,7 @@ namespace ToTheQuestionAboutSports
             {
                 int x = i;
                 int y = 0;
-                while (x >= 0 && x < n)
+                while (x >= 0 && x <= n)
                 {
                     Console.WriteLine(a[x][y] + " ");
                     x--;
