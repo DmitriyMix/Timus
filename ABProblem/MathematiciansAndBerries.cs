@@ -4,7 +4,7 @@ namespace MathematiciansAndBerries
 {
     class Program
     {
-        private static void Main()
+        static void Main()
         {
             int a1 = int.Parse(Console.ReadLine());
             int b1 = int.Parse(Console.ReadLine());
@@ -14,7 +14,6 @@ namespace MathematiciansAndBerries
             int b3 = int.Parse(Console.ReadLine());
             Console.WriteLine("1 - " + (a1 - a3));
             Console.WriteLine("2 - " + (b1 - b2));
-            //Console.ReadLine();
         }
     }
 }
