@@ -9,14 +9,10 @@ namespace Grisha
             int f = int.Parse(Console.ReadLine());
             if (1 <= f && f <= 11)
             {
-                if (f > 7)
-                {
-                    Console.WriteLine("YES");
-                }
-                else
-                {
-                    Console.WriteLine("No");
-                }
+                int task = ((12 - f) * 45) - 240;
+
+                var s = task > 0 ? "YES" : "NO";
+                Console.WriteLine(s);
             }
         }
     }
