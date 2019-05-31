@@ -1,5 +1,6 @@
 ﻿namespace Solver
 {
+    //1000+
     class ABSolver
     {
         private readonly int a;
