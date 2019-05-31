@@ -4,32 +4,22 @@ namespace Eniya
 {
     class Program
     {
-        private static void Main()
+        static void Main()
         {
 
-            int N;
-            int A;
-            int B;
-
-            do
+            int N = int.Parse(Console.ReadLine());
+            int A = int.Parse(Console.ReadLine());
+            int B = int.Parse(Console.ReadLine());
+            if (1 <= N && N <= 100)
             {
-                A = int.Parse(Console.ReadLine());
+                if (1 <= A && A <= 100)
+                {
+                    if (1 <= B && B <= 100)
+                    {
+                        Console.WriteLine((A * B) * N * 2);
+                    }
+                }
             }
-            while (A > 1 && A < 100);
-            
-            do
-            {
-                B = int.Parse(Console.ReadLine());
-            }
-            while (B > 1 && B < 100);
-            do
-            {
-                N = int.Parse(Console.ReadLine());
-            }
-            while (N > 1 && N < 100);
-            int R = ((A * B) * N) * 2;
-            Console.WriteLine(R);
-            
         }
     }
 }
