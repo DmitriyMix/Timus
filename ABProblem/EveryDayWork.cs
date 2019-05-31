@@ -2,6 +2,7 @@
 
 namespace EveryDayWork
 {
+    //1264+
     class Programm
     {
         static void Main()
