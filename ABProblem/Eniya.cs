@@ -6,19 +6,12 @@ namespace Eniya
     {
         static void Main()
         {
-
-            int N = int.Parse(Console.ReadLine());
-            int A = int.Parse(Console.ReadLine());
-            int B = int.Parse(Console.ReadLine());
-            if (1 <= N && N <= 100)
+            int n = int.Parse(Console.ReadLine());
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            if (1 <= n && n <= 100 && 1 <= a && a <= 100 && 1 <= b && b <= 100)
             {
-                if (1 <= A && A <= 100)
-                {
-                    if (1 <= B && B <= 100)
-                    {
-                        Console.WriteLine((A * B) * N * 2);
-                    }
-                }
+                Console.WriteLine((a * b) * n * 2);
             }
         }
     }
