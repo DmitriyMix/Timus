@@ -16,28 +16,29 @@ namespace OneSoldierInTheField
 
             for (int i = 0; i < n; i++)
             {
-                if (move[i][0] >= 'c' && move[i][0] <= 'f' && move[i][1] >= '3' && move[i][1] <= '6')
-                {
-                    Console.WriteLine(8);
-                }
-                else if (((move[i][0] == 'b' || move[i][0] == 'g') && move[i][1] >= '3' && move[i][1] <= '6') ||
-                    ((move[i][1] == '2' || move[i][1] == '7') && move[i][0] >= 'c' && move[i][0] <= 'f'))
-                {
-                    Console.WriteLine(6);
-                }
-                else if (move[i] == "a1" || move[i] == "a8" || move[i] == "h8" || move[i] == "h1")
-                {
-                    Console.WriteLine(2);
-                }
-                else if ((move[i][0] == 'a' && (move[i][1] == '2' || move[i][1] == '7')) ||
-                    (move[i][0] == 'b' && (move[i][1] == '1' || move[i][1] == '8')) ||
-                    (move[i][0] == 'g' && (move[i][1] == '1' || move[i][1] == '8')) ||
-                    (move[i][0] == 'h' && (move[i][1] == '2' || move[i][1] == '7')))
-                {
-                    Console.WriteLine(3);
-                }
-                else
-                    Console.WriteLine(4);
+            	var x = (int) (move[i][0] - 'a');
+            	var y = (int) (move[i][1] - '1');
+
+            	var mp = new int [] {-1, 1};
+            	var sp = new int [] {2, 1};
+
+            	var sum = 0;
+
+            	for (int k = 0; k < sp.Length; ++k)
+            	{
+            		for (int j = 0; j < 4; ++ j)
+            		{
+	            		var x1 = x + mp[j / 2]*sp[k];
+	            		var y1 = y + mp[j % 2]*sp[(k + 1) % sp.Length];
+	
+	            		if (x1 >= 0 && x1 < 8 && y1 >= 0 && y1 < 8)
+	            		{
+	            			++sum;
+	            		}
+            		}
+
+            	}
+               Console.WriteLine(sum);
             }
         }
     }
