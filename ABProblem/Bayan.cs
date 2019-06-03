@@ -9,15 +9,15 @@ namespace bayan
             int n = int.Parse(Console.ReadLine());
             string[] shop = new string[n];
             int x = 0;
-            for(int i = 0; i< n; i++)
+            for (int i = 0; i < n; i++)
             {
                 shop[i] = Console.ReadLine();
             }
-            for (int i = 0; i<shop.Length; i++)
+            for (int i = 0; i < shop.Length; i++)
             {
-                for(int k = i+1; k <shop.Length;k++)
+                for (int k = i + 1; k < shop.Length; k++)
                 {
-                    if(shop[i] == shop[k])
+                    if (shop[i] == shop[k])
                     {
                         x++;
                         i--;
@@ -29,7 +29,6 @@ namespace bayan
                 }
             }
             Console.WriteLine(x);
-                  
         }
     }
 }
