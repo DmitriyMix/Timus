@@ -13,7 +13,7 @@ namespace Donald
             for (int z = 1; z <= n; z++)
             {
                 string str1 = Console.ReadLine();
-                for ( int f = 1; f <= n; f++)
+                for (int f = 1; f <= n; f++)
                 {
                     if (str1[0] == 'A' || str1[0] == 'P' || str1[0] == 'O' || str1[0] == 'R')
                     {

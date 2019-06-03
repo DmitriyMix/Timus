@@ -7,10 +7,10 @@ namespace ToTheQuestionAboutSports
         static void Main()
         {
             int n = int.Parse(Console.ReadLine());
-            string[][] a = new string[n][];
+            int[][] a = new int[n][];
             for (int i = 0; i < n; i++)
             {
-                a[i] = Console.ReadLine().Split(' ');
+                a[i] = Convert.ToInt32(Console.ReadLine());
             }
             for (int i = 0; i < n; i++)
             {
