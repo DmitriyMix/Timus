@@ -15,7 +15,7 @@ namespace Eniya
                 {
                     if(1 <= b && b <= 100)
                     {                      
-                        Console.WriteLine(a * b * n * 2);
+                        Console.WriteLine("mass " + (a * b * n * 2));
                     }
 
                 }                                          
