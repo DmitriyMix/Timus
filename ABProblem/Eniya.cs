@@ -2,24 +2,18 @@
 
 namespace Eniya
 {
+    //1293+
     class Program
     {
         static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
-            int a = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
-            if (1 <= n && n <= 100)
-            {
-                if (1 <= a && a <= 100)
-                {
-                    if(1 <= b && b <= 100)
-                    {                      
-                        Console.WriteLine("mass " + (a * b * n * 2));
-                    }
-
-                }                                          
-            }
+            string[] values = Console.ReadLine().Split(' ');
+            int n = int.Parse(values[0]);
+            int a = int.Parse(values[1]);
+            int b = int.Parse(values[2]);
+            Console.WriteLine(( a * b * n) * 2);
         }
     }
 }
+             
+
