@@ -8,22 +8,25 @@ namespace Bayan1
     {
         static void Main()
         {
-            int count = 0;           
+
+            int n = int.Parse(Console.ReadLine());
+            int count = 0;
             var shop = new HashSet<string>
             {
                 Console.ReadLine()
             };
-            foreach (var s in shop)
+            //foreach (string s in shop)
+            for( var s = 0; s <= n; s++)
             {
-                if (!shop.Contains(s))
+                if (shop.Equals(shop))
                 {
                     count++;
                 }
-                else if (shop.Contains(s))
+                else if (!shop.Equals(shop))
                 {
-                    shop.Add(s);
+                    shop.Add();
                 }
-            }           
+            }
             Console.WriteLine(count);
         }
 
