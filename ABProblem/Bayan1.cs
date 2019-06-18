@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace Bayan1
 {
+    //1563+
     class Program
     {
         static void Main()
@@ -11,22 +12,20 @@ namespace Bayan1
 
             int n = int.Parse(Console.ReadLine());
             int count = 0;
-            var shop = new HashSet<string>
+            var shop = new HashSet<string>();
+            for (int i = 0; i < n; i++)
             {
-                Console.ReadLine()
-            };
-            //foreach (string s in shop)
-            for( var s = 0; s <= n; s++)
-            {
-                if (shop.Equals(shop))
+                var s = Console.ReadLine();
+                if (!shop.Contains(s))
+                {
+                    shop.Add(s);
+                }
+                else
                 {
                     count++;
                 }
-                else if (!shop.Equals(shop))
-                {
-                    shop.Add();
-                }
             }
+
             Console.WriteLine(count);
         }
 
