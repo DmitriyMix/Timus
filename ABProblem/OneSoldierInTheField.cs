@@ -28,7 +28,10 @@ namespace OneSoldierInTheField
             	{
             		for (int j = 0; j < 4; ++ j)
             		{
-	            		var x1 = x + mp[j / 2]*sp[k];
+                        var m1 = sp[k];
+                        var m2 = mp[j / 2];
+
+                        var x1 = x + m2 * m1;
 	            		var y1 = y + mp[j % 2]*sp[(k + 1) % sp.Length];
 	
 	            		if (x1 >= 0 && x1 < 8 && y1 >= 0 && y1 < 8)
