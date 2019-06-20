@@ -15,13 +15,14 @@ namespace Hierogliph
             string b = Console.ReadLine();
             foreach (string d in a)
             {
-                if (d.Substring(1, 1) == b)
+                if ( d.Contains(b) && d.Substring(1) == b)
                     Console.WriteLine(d);
+
             }
         }
     }
 }
 
-    
+
 
 
