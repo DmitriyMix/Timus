@@ -28,26 +28,19 @@ namespace Thread
             {
                 arr = Console.ReadLine().Split(' ');
                 c[i] = new Coords(double.Parse(arr[0]), double.Parse(arr[1]));
-            }
+                          
+            }          
             foreach (var m in c)
             {
-                var l = (m.x - m.x);
-                var h = (m.y - m.y);
-                var k = Math.Pow(value, l);
-                var v = Math.Pow(value, h);
+                var l = (m.x - m.y);
+                var h = (m.y - m.x);
+                var k = Math.Pow(l, value);
+                var v = Math.Pow(h, value);
                 var f = k + v;
-                var u = Math.Sqrt(f);
+                var u = Math.Sqrt(l*l+h*h);//(f)
 
                 //Console.WriteLine(u);
-                sum =u + (2 * Math.PI * r * r);
-
-                //foreach (var t in c)
-                {
-                  
-                }
-
-
-
+                sum = u + (2 * Math.PI *r);             
             }
             Console.WriteLine("{0:F2}", sum);
         }
