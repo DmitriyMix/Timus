@@ -2,6 +2,7 @@
 
 namespace Donald
 {
+    //2023+
     class Programm
     {
 
@@ -41,7 +42,7 @@ namespace Donald
                     }
                 }
             }
-            Console.WriteLine();
+            Console.WriteLine(sum);
         }
     }
 }
