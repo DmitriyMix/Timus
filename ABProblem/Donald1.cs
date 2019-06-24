@@ -1,6 +1,4 @@
-﻿using Antlr.Runtime.Misc;
-using Newtonsoft.Json.Serialization;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Donald1
@@ -13,7 +11,7 @@ namespace Donald1
             int pos = 1;
             int sum = 0;
             int n = int.Parse(Console.ReadLine());
-            string name = Console.ReadLine();
+            
 
 
             Dictionary<string, int> box1 = new Dictionary<string, int>
@@ -49,11 +47,58 @@ namespace Donald1
                 {  "Winnie", 3 }
         };
             var s = "Winnie";
+            var z = "Simba";
+            var w = "Aurora"; 
             var boxNumber = box1[s];
+            var boxNumber1 = box1[z];
+            var boxNumber2= box1[w];
             for (int i = 0; i < n; i++)
             {
-              
+                string name = Console.ReadLine();
+                foreach (string c in box1.Keys)
+                {
+                    if (c == name && boxNumber == 3 && pos == 3)
+                    {
+                        
+                        sum += 2;
+                        pos--;
+                    }
+                    else if (c == name && boxNumber1 == 2 && pos == 2)
+                    {
+                        
+                        sum += 1;
+                        
+                    }
+                    else if(c == name && boxNumber2 == 1 && pos == 1)
+                    {
+                       
+                        sum += 0;
+                        pos++;
+                    }
+                    //if (c.Contains(name))
+                    {
+                        //foreach(var u in box1.Values)
+                        {
+                            //if(boxNumber2 == 1)
+                            {
+
+                            }
+                            //if (u == 1 && pos == 1)
+                            {
+                                //sum += 0;
+                                //if()
+                                {
+                                    
+                                }
+                            }
+                            
+                        }
+
+                    }
+                    
+                }
             }
+            Console.WriteLine(sum);
         }
     }
 }
